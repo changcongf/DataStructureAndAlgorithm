@@ -1,3 +1,1 @@
-# Hello-World-V2
-This is about test of how to use Github
-This is a test of branches
+学习数据结构和leetcode算法相关资料
