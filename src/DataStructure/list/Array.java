@@ -2,33 +2,27 @@ package DataStructure.list;
 
 import java.util.Arrays;
 
+/*
+ * 简单线性表实现
+ */
 public class Array {
-    public static void main(String[] args) {
-        int[] a = {1, 2, 3,5,7,3,9,11,23,4};
-        Array array = new Array(a);
-        //System.out.println(array.findIndex(23));
-        array.insert(11, 999);
-        array.print();
-        while (true) {}
-    }
-
 
     private int length;
     private int[] array;
-    private static final int DEFAULTSIZE = 100;
+    private static final int DEFAULT_SIZE = 100;
     private int maxSize;
 
     public Array() {
-        this.array = new int[DEFAULTSIZE];
+        this.array = new int[DEFAULT_SIZE];
         this.length = 0;
-        maxSize = DEFAULTSIZE;
+        maxSize = DEFAULT_SIZE;
     }
 
     public Array(int[] array) {
         this.length = array.length;
-        this.array = new int[DEFAULTSIZE];
+        this.array = new int[DEFAULT_SIZE];
         System.arraycopy(array, 0, this.array, 0, length);
-        maxSize = DEFAULTSIZE;
+        maxSize = DEFAULT_SIZE;
     }
 
     public Array(int size) {
